@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C2AE8",
+    "light": "#7C2AE8",
+    "dark": "#7C2AE8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -18,7 +18,11 @@
             "pages": [
               "introduction",
               "quickstart",
-              "development"
+              "development",
+              "understanding-the-basics",
+              "how-to-get-started-with-proculy",
+              "running-a-procurement-process",
+              "features-and-functionality"
             ]
           },
           {
