@@ -1,4 +1,507 @@
 ---
-title: Running a Procurement Process
-description: "Welcome to the home of your new documentation"
+title: 'Running a Procurement Process'
+description: 'Learn how to initiate and manage procurement requests through the Intake process in Proculy.'
 ---
+
+### Initiating a Request in Intake
+
+An **Intake** is the initial request created by any employee to procure goods or services. It is department-specific and adheres to that department's customized approval flow. Once fully approved, the intake is **automatically converted into a requisition** for sourcing professionals to handle.
+
+### How to create and manage an Intake
+<AccordionGroup>
+    <Accordion icon="plus" title="Create Intake">
+        On the left-hand navigation panel, click **Purchasing** to expand the sub-menu. Then click **Intakes**, followed by **Create Intake** to begin submitting your request.
+
+        You'll be directed to a form where you must fill out the following mandatory fields:
+        - Title
+        - Type of Request
+        - Department
+        - Priority Level
+        - Request (as text)
+        - Expected Delivery Date
+
+        Optionally, you can:
+        - Suggest vendors
+        - Assign a specific buyer from your company
+    </Accordion>
+    <Frame>
+        <img src="/images/64.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="list" title="Add Items from Catalogs">
+        Based on the **Type of Request**, you’ll be able to:
+        - **Select from Catalog** to choose approved goods/services
+        - Browse both the **Item Catalog** and **Vendor Catalog** (registered vendor items)
+
+        These help ensure consistency and compliance with procurement policies.
+    </Accordion>
+    <Frame>
+        <img src="/images/65.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="sticky-note" title="Add Notes & Submit">
+        If you have any additional details or clarifications, include them in the **Notes** section.
+
+        Once everything is filled, click **Save**. The intake will automatically be submitted into the approval workflow based on your department’s configuration.
+    </Accordion>
+</AccordionGroup>
+
+**Approving an Intake**
+
+<AccordionGroup>
+    <Accordion icon="envelope" title="Approval Notifications">
+        Upon submission, the **first-level approver** will receive a system notification and an email with a link to review the intake. They can either **approve** or **reject** the request.
+    </Accordion>
+    <Frame>
+        <img src="/images/66.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="gauge" title="Review from Dashboard">
+        Approvers can also check pending actions from the dashboard under **Your Involvement**.
+
+        - Click on the pending intake count to see a list
+        - Click an **Intake ID** to open and review the intake details
+    </Accordion>
+    <Frame>
+        <img src="/images/67.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="pen" title="Send for Revision">
+        If any details require changes, the approver can send the intake back for **revision** instead of rejecting it.
+    </Accordion>
+    <Frame>
+        <img src="/images/68.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+**Editing an Intake**
+
+<AccordionGroup>
+    <Accordion icon="edit" title="How to Edit">
+        If your intake is returned for revision, you can:
+        - Click the intake link from the **notification**
+        - Or go to **Purchasing > Intakes**, and select the relevant **Intake ID**
+
+        Then click the **Edit** button on the top right corner.
+    </Accordion>
+    <Frame>
+        <img src="/images/69.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="bars" title="Alternative Editing Route">
+        Alternatively, from the **Intakes** page:
+        - Click the **Actions** button next to the intake
+        - Choose **Edit**
+
+        After making the necessary changes, **resubmit** the intake for approval.
+    </Accordion>
+    <Frame>
+        <img src="/images/70.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+---
+
+<CardGroup>
+    <Card
+        title="Configure Intake Approvals"
+        icon="shuffle"
+        href="/docs/modules/workflow"
+    >
+        Set up customized approval flows by department, priority, or type of request.
+    </Card>
+    <Card
+        title="Catalog & Vendor Setup"
+        icon="boxes-stacked"
+        href="/docs/modules/item-catalog"
+    >
+        Learn how to manage catalogs of approved items and vendors.
+    </Card>
+    <Card
+        title="Assign Buyers Automatically"
+        icon="user-check"
+        href="/docs/settings/user-roles"
+    >
+        Define buyer assignment rules to route requests to the right person.
+    </Card>
+</CardGroup>
+
+### Initiating a new Requisition
+
+**Create Requisition**
+
+Requisitions are structured procurement requests that consolidate required items and details before generating Purchase Orders or RFQs.
+
+<AccordionGroup>
+    <Accordion icon="plus" title="Start a New Requisition">
+        Navigate to **Purchasing** from the left sidebar. Click **Requisitions**, then select **Create Requisition**.
+
+        This will direct you to a form requiring the following mandatory fields:
+        - Title *
+        - Type of Purchase *
+        - Shipping Address *
+        - Department *
+        - Expected Delivery Date *
+        - Priority *
+        - Line Items
+    </Accordion>
+    <Frame>
+        <img src="/images/71.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="boxes-stacked" title="Add Items to Requisition">
+        Depending on the selected **Purchase Type**, you can:
+        - Choose items from the **Item Catalog**
+        - Select from the **Vendor Catalog** (approved vendor items)
+
+        If your item is not listed, click **Add New Item** to enter it as a free-text item.
+    </Accordion>
+    <Frame>
+        <img src="/images/72.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="circle-check" title="Request Catalog Addition">
+        When adding a new item, use the checkbox **"Request to add this item into the Item Catalog"** to submit the item for catalog approval by your procurement team.
+    </Accordion>
+
+    <Accordion icon="file-lines" title="Add Item-Level Details">
+        For each line item, you can include:
+        - Vendor name
+        - Unit price
+        - Linked contract (if applicable)
+    </Accordion>
+    <Frame>
+        <img src="/images/73.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="sticky-note" title="Add Notes & Save">
+        Include any supporting comments or justifications in the **Notes** section.
+
+        Once completed, click **Save** to create your requisition.
+    </Accordion>
+</AccordionGroup>
+
+**Create Purchase Order or RFQ**
+
+Once a requisition is saved and in **Pending** status, you can initiate procurement actions:
+
+<AccordionGroup>
+    <Accordion icon="file-invoice" title="Create Purchase Order">
+        From the requisition view, select line items and click **Create PO**.
+
+        > ⚠️ Only line items with a vendor and unit price can be converted into a PO.
+    </Accordion>
+    <Accordion icon="file-signature" title="Create Request for Quote (RFQ)">
+        You can also create an RFQ by selecting items and clicking **Create RFQ**. This is useful for comparing vendor offers before issuing a PO.
+    </Accordion>
+</AccordionGroup>
+<Frame>
+    <img src="/images/74.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+**Edit Requisition**
+
+<AccordionGroup>
+    <Accordion icon="edit" title="Edit a Requisition from Intake">
+        If a requisition is auto-created from an intake, go to the **Requisition Single View** page and click **Edit**.
+
+        Alternatively, use the **Actions** button next to the requisition on the list view.
+    </Accordion>
+    <Frame>
+        <img src="/images/75.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="pen-to-square" title="Update Line Items">
+        Add or edit line items and update the requisition as needed to continue procurement actions like PO or RFQ creation.
+    </Accordion>
+
+    <Accordion icon="clock-rotate-left" title="Edit Pending Requisitions">
+        Any **pending** requisition can be edited. However, only line items not yet converted into a PO or RFQ can be modified.
+    </Accordion>
+</AccordionGroup>
+ <Frame>
+    <img src="/images/76.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+
+<CardGroup>
+    <Card
+        title="Manage Requisitions"
+        icon="list-check"
+        href="/docs/modules/requisitions"
+    >
+        Learn how to track, filter, and manage requisition workflows.
+    </Card>
+    <Card
+        title="Set Approval Workflows"
+        icon="shuffle"
+        href="/docs/modules/workflow"
+    >
+        Customize requisition approval flows by department or purchase type.
+    </Card>
+    <Card
+        title="Create POs & RFQs"
+        icon="file-invoice"
+        href="/docs/modules/purchase-orders"
+    >
+        Explore how to generate and manage purchase orders or RFQs from requisitions.
+    </Card>
+</CardGroup>
+
+
+### How to manage Purchase Order
+
+**Creating a Purchase Order**
+
+<AccordionGroup>
+    <Accordion icon="file-plus" title="From a Requisition">
+        Navigate to **Purchasing > Requisitions**. Click on a Requisition ID to view details.
+
+        Select the desired line items. The **Create PO** button will activate.
+
+        > Note: Purchase orders can only be created for items with both a **vendor** and **unit price**.
+
+        Confirm creation. If multiple vendors are involved, separate POs will be created.
+    </Accordion>
+    <Frame>
+        <img src="/images/77.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="file-pen" title="From Scratch">
+        Go to **Purchasing > Purchase Orders** and click **Create Purchase Order** in the top right.
+
+        Fill in the required data and add line items. Once saved, the PO is submitted for approval.
+    </Accordion>
+    <Frame>
+        <img src="/images/78.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+
+**Purchase Order Statuses**
+
+| Status | Description |
+|--------|-------------|
+| **Draft** | PO created from a requisition or RFQ, not yet submitted. |
+| **Approval Pending** | Awaiting approval. |
+| **Sent for Revision** | Returned by approver for updates. |
+| **Sent to Vendor** | Fully approved and sent to vendor. |
+| **Vendor Accepted** | Vendor has accepted the PO. |
+| **Partially Received** | Partial items received and approved. |
+| **Fully Received** | All items received and approved. |
+
+
+**Approving a Purchase Order**
+
+When submitted, the first-level approver will receive a **notification and email**.
+
+<AccordionGroup>
+    <Accordion icon="check-circle" title="Via Notification or Dashboard">
+        - Approvers can access the PO via system/email notification.
+        - Or go to **Your Involvement** on the dashboard to see pending approvals.
+        - Click on the PO ID to view and take action.
+    </Accordion>
+    <Frame>
+        <img src="/images/79.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="edit" title="Send for Revision">
+        If any detail requires updates, the approver can **Send for Revision**.
+    </Accordion>
+    <Frame>
+        <img src="/images/80.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+**Editing a Purchase Order**
+
+When sent for revision, or in draft:
+
+- Access via **notification** or **Purchasing > Purchase Orders**.
+- Click on the PO ID and then click **Edit** at the top right.
+- Alternatively, click **Actions > Edit** from the list view.
+<Frame>
+    <img src="/images/81.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+**Tracking POs Sent to Vendors**
+
+Once a PO is sent to the vendor, they can **accept or reject** via the Vendor Portal.
+
+If they don't use the portal, you can manually update the status:
+
+- **Vendor Accepted** / **Vendor Rejected** with remarks.
+
+**Actions for Vendor Accepted POs:**
+
+<AccordionGroup>
+    <Accordion icon="credit-card" title="Prepayment">
+        - Click **Prepayment**, select payment mode, and enter amount.
+        - Payments can be via Stripe, bank transfer, etc., with proof attached.
+    </Accordion>
+
+    <Accordion icon="file-upload" title="Upload Invoice">
+        - Upload PDF invoices received outside the Vendor Portal.
+        - Add **Invoice Date** and **Due Date**.
+        - AI-powered OCR extracts invoice data.
+    </Accordion>
+
+    <Accordion icon="truck" title="Upload Received Note">
+        - Upload packing slip (PDF).
+        - Add **Received Date** and **Note Type**.
+        - AI-powered OCR generates the received note.
+    </Accordion>
+</AccordionGroup>
+
+**Handling Partially Received Orders**
+
+If received quantity falls within tolerance limits, PO remains **Partially Received**.
+
+- Manually mark as **Fully Received** using **Update Status > Fully Received** if applicable.
+- Once fully received, no further notes can be created.
+
+**Working with Received Notes**
+
+<AccordionGroup>
+    <Accordion icon="note" title="Create Received Note">
+        - Go to **Receiving > Received Notes**.
+        - Click **Create Received Note**.
+        - Choose a PO in **Vendor Accepted** or **Partially Received** status.
+        - Only one received note can be created at a time per PO.
+        - Enter received quantities and select received note type:
+        - **Regular Note**: Submits for approval
+        - **On-Hold**: Saves as draft
+        - Add optional: store, attachments, and notes.
+        - Click **Submit**.
+    </Accordion>
+    <Frame>
+        <img src="/images/82.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Frame>
+        <img src="/images/83.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Frame>
+        <img src="/images/84.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="check-circle" title="Approve Received Note">
+        - Approvers are notified via email/system.
+        - Navigate via **Your Involvement** or click the note ID.
+        - Approve, reject, or send for revision.
+        - Rejected notes can be saved as **Returned Notes**.
+    </Accordion>
+    <Frame>
+        <img src="/images/85.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Frame>
+        <img src="/images/86.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="pen" title="Edit Received Note">
+        - Drafts and revision-sent notes can be edited.
+        - Go to **Receiving > Received Notes**, click the note ID or use **Actions > Edit**.
+        - Make changes and resubmit.
+    </Accordion>
+    <Frame>
+        <img src="/images/87.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+
+<CardGroup>
+    <Card
+        title="Purchase Orders"
+        icon="file-invoice"
+        href="/docs/modules/purchase-orders"
+    >
+        Learn how to create, manage, and track your POs.
+    </Card>
+    <Card
+        title="Receiving Items"
+        icon="truck"
+        href="/docs/modules/receiving"
+    >
+        Record received goods, create received notes, and track vendor compliance.
+    </Card>
+    <Card
+        title="Approval Workflows"
+        icon="shuffle"
+        href="/docs/modules/workflow"
+    >
+        Automate approvals for POs and received notes.
+    </Card>
+</CardGroup>
+
+
+### How to manage invoices
+
+**Managing Invoices**
+
+Navigate to **Accounts Payable > Invoices** to manage submitted invoices.
+
+<AccordionGroup>
+    <Accordion icon="file-invoice" title="View Invoice Details">
+        Click on the invoice ID to view the details of the invoice. Verify whether the invoice is:
+
+        - **2-Way Matched**: The invoice matches the ordered line items, quantities, and price details exactly or within tolerance levels.
+        - **3-Way Matched**: The invoice is 2-way matched, and the total received quantities match the invoiced quantities within tolerance limits.
+        - **Duplicated**: The invoiced quantities exceed the ordered quantities, or the same invoice has been uploaded more than once.
+    </Accordion>
+
+    <Accordion icon="check-circle" title="Approval Process">
+        Once verified, approvers can approve the invoice for payment. If the invoice doesn't need approval, it will be automatically approved and ready for payment.
+    </Accordion>
+</AccordionGroup>
+ <Frame>
+    <img src="/images/88.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+**Uploading Vendor Invoices**
+
+If you receive invoices outside the system, you can upload a vendor invoice PDF to the corresponding purchase order (PO).
+
+<AccordionGroup>
+    <Accordion icon="upload" title="Upload an Invoice">
+        - Navigate to **Purchasing > Purchase Orders**.
+        - Open the relevant PO and click **Upload Invoice**.
+        - Select the invoice date and payment due date.
+        - Drag and drop the PDF file into the upload area, or click to select it.
+        - Click **Add** to list the file and then **Submit** to create the invoice.
+    </Accordion>
+
+    <Accordion icon="upload-cloud" title="Uploading Multiple Invoices">
+        To upload multiple invoices, click **Upload Invoice** again before submitting to add more PDFs. Once all invoices are uploaded, click **Submit** to finalize the process.
+    </Accordion>
+</AccordionGroup>
+ <Frame>
+    <img src="/images/89.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+**Managing Uploaded Invoices**
+
+Once uploaded, navigate to **Accounts Payable > Invoices** to view the status of the invoice.
+
+| Status | Description |
+|--------|-------------|
+| **Queued** | The invoice is in the queue for processing. |
+| **Approval Pending** | The invoice is waiting for approval. |
+| **Approved** | The invoice has been approved for payment. |
+| **Invalid** | The invoice has an issue and cannot be processed. |
+
+<AccordionGroup>
+    <Accordion icon="refresh" title="Reprocess Invoice">
+        If the invoice remains in the "Queued" status, click the **Reprocess** option to trigger the OCR and re-extract the data.
+    </Accordion>
+    <Frame>
+        <img src="/images/90.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="file-pdf" title="Invoice Validation">
+        If the uploaded document is invalid, the invoice status will show as **Invalid**. Review and re-upload if necessary.
+    </Accordion>
+
+    <Accordion icon="map-pin" title="Map Invoice Items">
+        If necessary, click the **Map Items** button to manually match the invoice items with the purchase order items.
+    </Accordion>
+    <Frame>
+        <img src="/images/91.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+**Invoice Attachments**
+
+The uploaded PDF invoice will be available as an attachment in the invoice view for reference.
+
+
+### How to work with requests for quotes
