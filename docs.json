@@ -7,7 +7,7 @@
     "light": "#7C2AE8",
     "dark": "#7C2AE8"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
     "tabs": [
       {
@@ -62,8 +62,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Virstack",
-          "href": "https://www.virstack.com/",
+          "anchor": "Proculy",
+          "href": "https://www.proculy.com/",
           "icon": "book-open-cover"
         },
         {
