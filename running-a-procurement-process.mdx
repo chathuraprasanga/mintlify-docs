@@ -7,7 +7,7 @@ description: 'Learn how to initiate and manage procurement requests through the 
 
 An **Intake** is the initial request created by any employee to procure goods or services. It is department-specific and adheres to that department's customized approval flow. Once fully approved, the intake is **automatically converted into a requisition** for sourcing professionals to handle.
 
-### How to create and manage an Intake
+**How to create and manage an Intake**
 <AccordionGroup>
     <Accordion icon="plus" title="Create Intake">
         On the left-hand navigation panel, click **Purchasing** to expand the sub-menu. Then click **Intakes**, followed by **Create Intake** to begin submitting your request.
@@ -123,7 +123,8 @@ An **Intake** is the initial request created by any employee to procure goods or
     </Card>
 </CardGroup>
 
-### Initiating a new Requisition
+### How to create and manage a requisition
+
 
 **Create Requisition**
 
@@ -245,6 +246,10 @@ Once a requisition is saved and in **Pending** status, you can initiate procurem
     </Card>
 </CardGroup>
 
+### Initiating a new Requisition
+
+
+no content
 
 ### How to manage Purchase Order
 
@@ -400,7 +405,6 @@ If received quantity falls within tolerance limits, PO remains **Partially Recei
     </Frame>
 </AccordionGroup>
 
-
 <CardGroup>
     <Card
         title="Purchase Orders"
@@ -424,7 +428,6 @@ If received quantity falls within tolerance limits, PO remains **Partially Recei
         Automate approvals for POs and received notes.
     </Card>
 </CardGroup>
-
 
 ### How to manage invoices
 
@@ -503,9 +506,7 @@ Once uploaded, navigate to **Accounts Payable > Invoices** to view the status of
 
 The uploaded PDF invoice will be available as an attachment in the invoice view for reference.
 
-
 ### How to work with requests for quotes
-
 
 **Creating a Request for Quote**
 
@@ -661,3 +662,312 @@ Each row can be expanded to see the vendor response status:
         Discover and engage with vendors on the Proculy B2B Marketplace.
     </Card>
 </CardGroup>
+
+### How to Make or Record Payments
+**Payments**
+Navigate to the Payments page via the main menu on the left: **Accounts Payable > Payments**. All recorded payments are listed in a tabular view.
+
+<Frame>
+    <img src="/images/104.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+There are two types of payments:
+- **Prepayment**: Payment made before receiving an invoice.
+- **Post-payment**: Payment made for approved invoices.
+
+<AccordionGroup>
+    <Accordion icon="plus" title="Make a Prepayment">
+        A Prepayment can be recorded for a purchase order when you want to make a payment before receiving an invoice. To be able to make a prepayment, the purchase order needs to be accepted by the vendor.
+        Go to **Purchasing > Purchase Orders** and click the PO ID of the order for which you want to make a prepayment.
+
+        On the right side of the PO’s single view page, click **Prepayment** to open the payment modal.
+        Select the payment mode and add the amount you are paying.
+        <Frame>
+            <img src="/images/105.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        - You can make a credit card payment through the system via **Stripe payment** (for that, the vendor account in the vendor portal needs to have a Stripe account configured).
+        <Frame>
+            <img src="/images/106.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        - You can record a payment already made using other methods with a payment proof attachment.
+        - When the purchase order is in a foreign currency, you need to enter the current exchange rate to make the payment.
+        <Frame>
+            <img src="/images/107.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        The successfully recorded prepayment will be listed in the Payments page, and when an invoice is received and approved, the prepayment will be linked to the invoice.
+    </Accordion>
+
+
+    <Accordion icon="plus" title="Make a Post-payment">
+        A post-payment can be made to one or more approved invoices for a single vendor at once.
+        Go to the **Payments page (Accounts Payable > Payments)** and click the **Create Payment** button on the upper right corner.
+        <Frame>
+            <img src="/images/108.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        To get a list of invoices that you can make payments for, you need to select a vendor and filter. A list of payment-ready or partially paid invoices for the selected vendor will be listed on the page.
+        <Frame>
+            <img src="/images/109.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        <Frame>
+            <img src="/images/110.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Look for the invoice and enter the paying amount in the **‘Paying’** field. You will not be able to enter an amount more than the payable amount of the invoice. When the paying amount is added, the checkbox for the invoice will be activated. You can add paying amounts for multiple invoices to make the payment at once.
+        <Frame>
+            <img src="/images/111.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Select all the invoices you want to add a payment to. A card will be displayed at the bottom of the page to show the selected invoices and the total amount you are going to pay. If you select invoices in different currencies, a separate card will appear for each currency.
+
+        Select your payment mode. Here also, you can make a credit card payment through the system via **Stripe payment**. You can record a payment already made using other methods with a payment proof attachment.
+
+        Submitting it will record the payments to the Payments page and also to the selected invoices. The Payment Status of the invoices will be updated accordingly as **Partially Paid** or **Fully Paid**.
+    </Accordion>
+
+</AccordionGroup>
+
+---
+
+### How to Create and Manage Budgets
+
+Navigate to **Budgets** in the main menu to view all created budgets.
+<Frame>
+    <img src="/images/112.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+The list view allows you to expand rows to see more budget details.
+Click on the budget title, or click the kebab menu (⋮) next to the budget and select **View** to open the detailed budget page.
+
+<AccordionGroup>
+    <Accordion icon="plus" title="Creating a Budget">
+        Click **Create Budget** in the upper-right corner of the Budgets page.
+        <Frame>
+            <img src="/images/113.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Fill in required Budget Details:
+        <Frame>
+            <img src="/images/114.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        - **Title**: Enter a name for the budget.
+        - **Budget Holder**: Select the person responsible for the budget.
+        - **Departments & Projects**: Choose all applicable departments and projects for the budget.
+        - **Approvers with Viewing Access**: Select users who should be able to see the linked budget details when approving a procurement document.
+
+        Choose the total budget period.
+        Select how the budget should be divided: **monthly**, **quarterly**, or **custom date ranges**, and allocate budget amounts accordingly.
+        The total **Budget amount** will be calculated automatically.
+
+        If using **custom date ranges**, define the periods properly to allocate budget amounts.
+        <Frame>
+            <img src="/images/115.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Use the **Attachments** field to upload supporting documents.
+
+        Click **Save** to add the budget to your company’s list.
+    </Accordion>
+
+    <Accordion icon="plus" title="Edit Budget">
+        You can update the information of a saved budget.
+        Click the kebab menu (⋮) next to the budget in the Budgets page and select **Edit**,
+        or click on the budget title to open the detailed view and then click the **Edit** button in the upper-right corner.
+        <Frame>
+            <img src="/images/116.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        <Frame>
+            <img src="/images/117.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Modify the necessary details and click **Save** to apply the changes.
+    </Accordion>
+
+    <Accordion icon="plus" title="Applying Budgets in Procurement">
+        Budgets can be **optionally linked** when creating **intakes** and **requisitions**.
+        <Frame>
+            <img src="/images/118.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        <Frame>
+            <img src="/images/119.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        A budget **must be linked** when creating a **purchase order**.
+        The same budget will automatically be linked to any **invoices** generated for that order.
+        <Frame>
+            <img src="/images/120.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        When selecting a budget from the dropdown:
+        - Only applicable budgets will be listed based on the **department/project** selected and the **creation date** of the document.
+        - If the **total budget amount** is less than the total value of the document, you **cannot** link that budget to the document.
+
+        During approval, assigned approvers can view budget details **only if** they are listed as an **Approver with Viewing Access** for the linked budget.
+    </Accordion>
+    <Frame>
+        <img src="/images/121.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+---
+
+### How to Create and Manage Contracts
+
+You can manage a list of contracts that you have with your vendors and link them to line items as applicable when creating **requisitions** and **purchase orders**.
+
+Navigate to **Vendor Management > Contracts** to see the list of saved contracts in your company.
+<Frame>
+    <img src="/images/122.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+By default, only **active contracts** will be shown in the table.
+Use the toggle **‘Active Contracts Only’** to view all created contracts.
+Click the kebab menu (⋮) next to the contract and select **View**, or click on the contract name to open the detailed contract page.
+ <Frame>
+    <img src="/images/123.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+<AccordionGroup>
+    <Accordion icon="plus" title="Create Contract">
+        Navigate to the **Contracts** page via **Vendor Management > Contracts**
+        and click the **Add Contract** button in the top-right corner.
+        <Frame>
+            <img src="/images/124.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Fill in the mandatory contract details in the pop-up:
+
+        - **Contract Period**
+        - **Vendor** and **Department**
+        - **Remarks** (optional)
+        - **Attachments** (upload any supporting documents)
+        <Frame>
+            <img src="/images/125.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Optional settings:
+
+        - Enable **Auto-Renewal** to automatically extend the contract for the same duration upon expiration.
+        - Set a **Notification Preference** to receive alerts before the contract expires.
+
+        Click **Create** to save the contract.
+        The user who creates the contract will be recorded as the **Contract Owner**.
+    </Accordion>
+
+    <Accordion icon="plus" title="Edit Contract">
+        To update a saved contract:
+
+        - Click the kebab menu (⋮) next to the contract and select **Edit**,
+        - Or click on the contract name to open the detailed view and click the **Edit** button.
+        <Frame>
+            <img src="/images/126.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        <Frame>
+            <img src="/images/127.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Modify the necessary details and click **Update** to save changes.
+    </Accordion>
+
+    <Accordion icon="plus" title="Link Contract for Line Items">
+        Contracts can be linked to line items in **requisitions** and **purchase orders**.
+
+        When selecting a vendor for a line item, the system displays a list of active contracts for that vendor in the **Contracts** field.
+        <Frame>
+            <img src="/images/128.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        **To link a contract in a Requisition:**
+
+        - Navigate to **Purchasing > Requisitions > Create Requisition** (or Edit Requisition)
+        - Select the items and assign vendors
+        - Choose a contract from the Contracts dropdown for each line item
+
+        **To link a contract in a Purchase Order:**
+
+        - Go to **Purchasing > Purchase Orders > Create Purchase Order**
+        - Or open a **Draft PO** / **Edit a PO sent for revision**
+        - Select a vendor and assign a contract to each line item from the dropdown
+
+        ![Select contracts for line items](path-to-image)
+    </Accordion>
+</AccordionGroup>
+
+---
+
+### How to Work with Reports
+
+<AccordionGroup>
+    <Accordion icon="bar-chart" title="2-way / 3-way Matching Report">
+        This report gives you an overview of all **vendor invoices** within a selected time period, along with their **2-way/3-way matching status**.
+
+        **To access:**
+        - Go to **Accounts Payable > 2-way/3-way Matching**
+
+        **Features:**
+        - Filter by **vendor**, **purchase order ID**, and **time period**
+        - Export as **PDF**
+    </Accordion>
+    <Frame>
+        <img src="/images/129.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="alert-circle" title="Duplicate Invoice Detection">
+        This report highlights potentially duplicated invoices from a vendor.
+
+        **Duplicate detection is triggered when:**
+        - The **same PDF** with an identical **invoice number** is uploaded more than once
+        - **Invoice quantities** exceed the **ordered quantity**
+
+        **To access:**
+        - Go to **Accounts Payable > Duplicate Invoice Detection**
+
+        **Features:**
+        - Filter by **time period**
+        - Expand a row to view the reason the invoice was flagged
+    </Accordion>
+    <Frame>
+        <img src="/images/130.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="insight" title="Insights Reports">
+        Get a summary view of procurement document activity across a selected time range.
+
+        **To access:**
+        - Go to **Reports > Insights**
+
+        **Features:**
+        - Select **document type** and **time period**
+        - View a list of created documents with summary data
+        - Click **Print** to download as a **PDF**
+    </Accordion>
+    <Frame>
+        <img src="/images/131.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Frame>
+        <img src="/images/132.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="clipboard-list" title="Purchase Order Reports">
+        View purchase orders grouped by **user**, **department**, or **vendor**.
+
+        **To access:**
+        - Go to **Reports** in the main menu
+
+        **Available views:**
+        - **By User**
+        - **By Department**
+        - **By Vendor**
+
+        Each report provides:
+        - **Total number** and **value** of purchase orders
+        <Frame>
+            <img src="/images/133.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        - Filters by **time period**
+        - Expandable rows with detailed PO information
+        <Frame>
+            <img src="/images/134.png" style={{ borderRadius: '0.5rem' }} />
+        </Frame>
+        Click **Export** to download as **PDF** or **CSV**
+    </Accordion>
+</AccordionGroup>
+
+---
+
+### How to Create Punchout Orders
+
+To create a punchout order:
+
+1. Navigate to **Punchout Orders** on the left menu.
+2. Click **Create Punchout Order**.
+3. Enter a **title** for the order.
+4. Set the **priority level** (Low, Medium, High).
+5. Click **Save** to create the order.
+
+
+
