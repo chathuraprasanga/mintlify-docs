@@ -505,3 +505,159 @@ The uploaded PDF invoice will be available as an attachment in the invoice view 
 
 
 ### How to work with requests for quotes
+
+
+**Creating a Request for Quote**
+
+<AccordionGroup>
+    <Accordion icon="list-plus" title="Access Requisitions">
+        Navigate to **Purchasing > Requisitions** via the main menu.
+    </Accordion>
+    <Frame>
+        <img src="/images/92.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="clipboard-list" title="Select Purchase Requisition">
+        Choose the pending purchase requisition you want to use.
+
+        Click the **Actions** button and select **View**.
+    </Accordion>
+    <Frame>
+        <img src="/images/93.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="file-plus" title="Create RFQ">
+        Select one or more line items and click the **Create RFQ** button.
+    </Accordion>
+    <Frame>
+        <img src="/images/94.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="users" title="Select Vendors and Details">
+        - Use the pagination or search to select vendors.
+        - Set a **Quoting End Date** and **Currency**.
+        - Click **Create RFQ** and confirm in the pop-up dialog.
+    </Accordion>
+    <Frame>
+        <img src="/images/95.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Frame>
+        <img src="/images/96.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+</AccordionGroup>
+
+
+**Requests for Quotes Page**
+
+Navigate to **Sourcing > Requests for Quotes** to view all created RFQs.
+
+| Status | Description |
+|--------|-------------|
+| **Active** | Vendors can still respond to this RFQ. |
+| **Processed** | POs have been created for all items. No further action can be taken. |
+| **Closed** | The quoting deadline has passed; vendors can no longer respond. |
+
+Each row can be expanded to see the vendor response status:
+
+- **Pending**: Vendor has not sent a quote yet.
+- **Responded**: Vendor has submitted a quote.
+- **Updated**: Vendor has modified a previously submitted quote.
+
+<Frame>
+    <img src="/images/97.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+<Frame>
+    <img src="/images/98.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+**Updating Requests for Quotes**
+
+<AccordionGroup>
+    <Accordion icon="file-pen" title="View and Update">
+        Open an RFQ to:
+        - View received quotes
+        - Add vendors
+        - Upload files
+        - Update quotes on behalf of vendors
+    </Accordion>
+    <Frame>
+        <img src="/images/99.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="user-plus" title="Add Vendors">
+        - For active RFQs, click **Add Vendors** in the top-right.
+        - Select vendors and confirm by clicking **Add Vendors**.
+        - Click **Create** on the confirmation message to finalize.
+    </Accordion>
+    <Frame>
+        <img src="/images/100.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Frame>
+        <img src="/images/101.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+
+    <Accordion icon="edit" title="Update Vendor Quote">
+        Update quotes on behalf of vendors, including:
+        - Unit Price
+        - Discount
+        - Tax Rates
+        - Shipping Cost
+        - Delivery Mode and Term
+        - Net Term
+        - Expiration Date
+
+        Additional notes and attachments can also be added.
+
+        Click **Update** to save changes.
+    </Accordion>
+</AccordionGroup>
+
+**Creating a Purchase Order from Quotes**
+<Frame>
+    <img src="/images/102.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+<AccordionGroup>
+    <Accordion icon="check-circle" title="Select Best Quote">
+        - Choose the best quote for each line item.
+        - Different vendors can be selected for different items.
+        - Only one PO can be created per line item.
+    </Accordion>
+
+    <Accordion icon="file-plus" title="Create PO">
+        - Select the checkbox beside each line item.
+        - Click **Create PO** at the bottom of the page.
+    </Accordion>
+    <Frame>
+        <img src="/images/103.png" style={{ borderRadius: '0.5rem' }} />
+    </Frame>
+    <Accordion icon="file-text" title="Review Draft PO">
+        - Created POs will appear as **Draft** on the **Purchase Orders** page.
+        - You’ll be redirected to the PO page with the draft at the top.
+        - Review and submit after adding any final details.
+    </Accordion>
+</AccordionGroup>
+
+
+<CardGroup>
+    <Card
+        title="Requests for Quotes"
+        icon="list-plus"
+        href="/docs/modules/requests-for-quotes"
+    >
+        Learn how to request and manage vendor quotes.
+    </Card>
+    <Card
+        title="Purchase Orders"
+        icon="file-invoice"
+        href="/docs/modules/purchase-orders"
+    >
+        Convert RFQs into POs and manage your procurement lifecycle.
+    </Card>
+    <Card
+        title="Sourcing Vendors"
+        icon="users"
+        href="/docs/modules/sourcing"
+    >
+        Discover and engage with vendors on the Proculy B2B Marketplace.
+    </Card>
+</CardGroup>
