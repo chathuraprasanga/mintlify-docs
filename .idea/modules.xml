@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/proculy-docs.iml" filepath="$PROJECT_DIR$/proculy-docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/proculy-docs.iml" filepath="$PROJECT_DIR$/.idea/proculy-docs.iml" />
     </modules>
   </component>
 </project>
