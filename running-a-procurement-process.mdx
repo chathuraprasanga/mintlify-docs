@@ -177,8 +177,9 @@ Alternatively, approvers can check their dashboard under 'Your Involvement', whe
 <Frame>
     <img src="/images/80.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
-If any data needs to be changed, the approver can send the purchase order for revision.
-
+<Tip>
+    If any data needs to be changed, the approver can send the purchase order for revision.
+</Tip>
 **Editing a Purchase Order**
 
 When an approver sends a purchase order you created for revision, you will be able to edit the purchase order. You can either view the order via the notification you receive or simply click on Purchase Orders under Purchasing and click on the PO ID you want to view. On the upper right corner you can see the Edit button. Alternatively, go to the Purchase Orders page, click the Actions button next to the PO, and select Edit.
@@ -316,27 +317,27 @@ Requests for quotes can be created for goods or services through a requisition, 
 **Creating a Request for Quote**
 
 <AccordionGroup>
-    <Accordion icon="hashtag" title="Access Requisitions:">
+    <Accordion icon="1" title="Access Requisitions:">
         Go to the requisition page via the main menu: `Purchasing > Requisitions`.
         <Frame>
             <img src="/images/92.png" style={{borderRadius: '0.5rem'}}/>
         </Frame>
     </Accordion>
-    <Accordion icon="hashtag" title="Select Purchase Requisition:">
+    <Accordion icon="2" title="Select Purchase Requisition:">
         Choose the pending purchase requisition you want to create a request for quotes from. Click the action button
         and then “View”.
         <Frame>
             <img src="/images/93.png" style={{borderRadius: '0.5rem'}}/>
         </Frame>
     </Accordion>
-    <Accordion icon="hashtag" title="Create RFQ:">
+    <Accordion icon="3" title="Create RFQ:">
         Select the line items (one or more) that need to be added to the request for quotes and click the “Create RFQ”
         button.
         <Frame>
             <img src="/images/94.png" style={{borderRadius: '0.5rem'}}/>
         </Frame>
     </Accordion>
-    <Accordion icon="hashtag" title="Select Vendors and Details:">
+    <Accordion icon="4" title="Select Vendors and Details:">
         Use the pagination bar or search bar to select vendors from the list. Choose a quoting end date and the currency
         for the quotes, then click the "Create RFQ" button. Confirm the creation by clicking the “Create” button in the
         pop-up.
@@ -379,8 +380,8 @@ A row in the table can be expanded to see the response status of vendors.
     <img src="/images/99.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
 
-1. View and Update: Users can view details, received quotes, and update requests for quotes by adding more vendors, uploading files, and updating quotes on behalf of a vendor.
-2. Add Vendors: For an active request for quotes, click the “Add Vendors” button in the top-right corner. Select the vendors from the list and confirm by clicking the “Add Vendors” button, then click “Create” on the confirmation message.
+1. **View and Update:** Users can view details, received quotes, and update requests for quotes by adding more vendors, uploading files, and updating quotes on behalf of a vendor.
+2. **Add Vendors:** For an active request for quotes, click the “Add Vendors” button in the top-right corner. Select the vendors from the list and confirm by clicking the “Add Vendors” button, then click “Create” on the confirmation message.
 
 <AccordionGroup>
     <Frame>
@@ -391,21 +392,21 @@ A row in the table can be expanded to see the response status of vendors.
     </Frame>
 </AccordionGroup>
 
-3. Update Quote: Users can update a quote on behalf of a vendor, including unit price, discount, tax rates, shipping cost, delivery mode,shipping term, net term, and an expiration date for the quote. Additional notes and attachments can be used for more information exchange. Click the “Update” button to save changes.
+3. **Update Quote:** Users can update a quote on behalf of a vendor, including unit price, discount, tax rates, shipping cost, delivery mode,shipping term, net term, and an expiration date for the quote. Additional notes and attachments can be used for more information exchange. Click the “Update” button to save changes.
 
 **Creating a Purchase Order from Quotes**
 <Frame>
     <img src="/images/102.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
 
-1. Select the Best Quote: From received quotes, select the best quote for an item. For multiple line items, different vendors can be chosen for different items, but only one PO can be created per line item.
-2. Create PO: Select the checkbox for the line item and click the "Create PO" button at the bottom of the page.
+1. **Select the Best Quote:** From received quotes, select the best quote for an item. For multiple line items, different vendors can be chosen for different items, but only one PO can be created per line item.
+2. **Create PO:** Select the checkbox for the line item and click the "Create PO" button at the bottom of the page.
 
 <Frame>
     <img src="/images/103.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
 
-3. Draft PO: The created POs will be listed in the Purchase Orders page as drafts and you will
+3. **Draft PO:** The created POs will be listed in the Purchase Orders page as drafts and you will
 be navigated to the purchase orders page with the draft order created at the top. View it, review and add any other necessary information and submit it.
 
 By following these steps, you can efficiently create, manage, and process requests for quotes, ensuring the best vendor selections and streamlined procurement operations.
@@ -415,7 +416,9 @@ By following these steps, you can efficiently create, manage, and process reques
 ## How to Make or Record Payments
 Navigate to the Payments page via the main menu on the left: `Accounts Payable > Payments`.
 
-All recorded payments are listed in a tabular view.
+<Info>
+    All recorded payments are listed in a tabular view.
+</Info>
 <Frame>
     <img src="/images/104.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
@@ -423,7 +426,7 @@ There are two types of payments:
 <CardGroup>
     <Card
         title="Prepayment:"
-        icon="credit-card"
+        icon="sack-dollar"
         href="/running-a-procurement-process#how-to-work-with-requests-for-quotes"
     >
         Payment made before receiving an invoice.
@@ -538,8 +541,10 @@ Click the kebab menu (⋮) next to the budget in the Budgets page and select Edi
     <Frame>
         <img src="/images/117.png" style={{borderRadius: '0.5rem'}}/>
     </Frame>
+    <Accordion icon="floppy-disk" title="Save changes">
+        Modify the necessary details and save the changes.
+    </Accordion>
 </AccordionGroup>
-Modify the necessary details and save the changes.
 
 **Applying created budgets into procurement**
 Budgets can be linked optionally when creating intakes and requisitions.
@@ -608,8 +613,10 @@ Click the kebab menu (⋮) next to the contract in the Contracts page and select
     <Frame>
         <img src="/images/127.png" style={{borderRadius: '0.5rem'}}/>
     </Frame>
+    <Accordion icon="file-pen" title="Update contract">
+        Modify the necessary details and update the contract.
+    </Accordion>
 </AccordionGroup>
-Modify the necessary details and update the contract.
 
 **Link Contract for Line Items**
 
@@ -636,7 +643,9 @@ href="https://buyer.proculy.com/app/reports/matching_reports" target="_blank">2-
     <img src="/images/129.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
 
-You can filter the report by vendor, purchase order ID, and time period. It can also be downloaded as a PDF.
+<Info>
+    You can filter the report by vendor, purchase order ID, and time period. It can also be downloaded as a PDF.
+</Info>
 
 **Duplicate Invoice Detection**
 
@@ -647,8 +656,9 @@ href="https://buyer.proculy.com/app/reports/duplicates" target="_blank">Duplicat
     <img src="/images/130.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
 
-You can filter the list by time period. Expanding a row shows the reason the invoice was flagged as a duplicate.
-
+<Info>
+    You can filter the list by time period. Expanding a row shows the reason the invoice was flagged as a duplicate.
+</Info>
 **Insights Reports**
 
 Go to Reports in the main menu and click on <a href="https://buyer.proculy.com/app/reports/duplicates"
@@ -661,8 +671,10 @@ target="_blank">Insights</a>. There, you can select a type of procurement docume
     <Frame>
         <img src="/images/132.png" style={{borderRadius: '0.5rem'}}/>
     </Frame>
+    <Accordion icon="download" title="Download report">
+        Click 'Print' to download the report as a PDF.
+    </Accordion>
 </AccordionGroup>
-Click 'Print' to download the report as a PDF.
 
 **Purchase Order Reports**
 
