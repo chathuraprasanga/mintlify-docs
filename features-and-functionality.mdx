@@ -11,38 +11,50 @@ Activity logs are available for the following modules: Intakes, Requisitions, RF
 
 Go to the tabular view of any procurement module. Click on the action button (⋮) next to a record. Select ‘View Activity Log’ from the dropdown.
 
+<AccordionGroup>
 <Frame>
     <img src="/images/135.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
 
-It will show you a detailed log of actions taken during the procurement process for that specific document.
+<Accordion icon="more" title="Detailed log of actions">
+    It will show you a detailed log of actions taken during the procurement process for that specific document.
+</Accordion>
 
 <Frame>
     <img src="/images/136.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
-
+</AccordionGroup>
 
 ## Mark as On Leave
 
 You can set a leave period in the system to ensure your pending approvals are automatically redirected to an alternate approver, preventing any interruptions in the procurement flow.
 
 **To set a Leave Period:**
-- Go to Profile Settings to access your Leave Periods page.
-<Frame>
-    <img src="/images/137.png" style={{borderRadius: '0.5rem'}}/>
-</Frame>
 
-- Click ‘Add Leave Period’ to create a new one.
-<Frame>
-    <img src="/images/138.png" style={{borderRadius: '0.5rem'}}/>
-</Frame>
+<AccordionGroup>
+    <Accordion icon="right-to-bracket" title="Go to">
+        - Go to Profile Settings to access your Leave Periods page.
+        <Frame>
+            <img src="/images/137.png" style={{borderRadius: '0.5rem'}}/>
+        </Frame>
+    </Accordion>
+    <Accordion icon="plus" title="Add">
+        - Click ‘Add Leave Period’ to create a new one.
+        <Frame>
+            <img src="/images/138.png" style={{borderRadius: '0.5rem'}}/>
+        </Frame>
+    </Accordion>
+    <Accordion icon="check" title="Select">
+        - Select the start and end date for your leave, optionally add a reason, and click ‘Save’.
+        <Frame>
+            <img src="/images/139.png" style={{borderRadius: '0.5rem'}}/>
+        </Frame>
+    </Accordion>
+</AccordionGroup>
 
-- Select the start and end date for your leave, optionally add a reason, and click ‘Save’.
-<Frame>
-    <img src="/images/139.png" style={{borderRadius: '0.5rem'}}/>
-</Frame>
-
-- Your saved leave period will be displayed in a tabular view on the Leave Periods page.
+<Tip>
+    Your saved leave period will be displayed in a tabular view on the Leave Periods page.
+</Tip>
 
 When the start date arrives, any pending approvals you have will be automatically reassigned to your alternate approver. Any new approvals meant for you during your leave will also be assigned to your alternate approver.
 On the end date, all unapproved tasks will be reassigned back to you.
@@ -59,6 +71,7 @@ While a leave period is active, you can edit it and change the end date to today
 
 Additionally, a privileged user with permission to edit users can save a leave period on behalf of another user.
 To do this, go to <a href="https://buyer.proculy.com/app/users" target="_blank">`Settings > User Management`</a>, click the action button (⋮) for the user, and select 'Leave Periods.' This will take you to the user's leave periods page, where you can add or edit leave periods on their behalf.
+
 <AccordionGroup>
 <Frame>
     <img src="/images/141.png" style={{borderRadius: '0.5rem'}}/>
@@ -79,21 +92,23 @@ You can use Proculy in Spanish. To change the language, go to the top right corn
 
 We support punchout catalogs, which integrate your purchasing system directly with suppliers like Amazon or Staples. With punchouts, you can browse a supplier’s website, add items directly to your requisition, and complete the purchase automatically once the order is approved without needing to manually re-enter item details. This eliminates unnecessary steps, reduces errors, and keeps your purchasing process smooth and connected. Without punchouts, users would have to manually key in item information and separately place the order, creating friction and risks for document mismatches. Punchouts simplify the entire process.
 
-### How to use Punchout Catalogs:
+**How to use Punchout Catalogs:**
 
 **Create a Requisition:**
 
-- Go to <a href="https://buyer.proculy.com/app/requisitions/create-new" target="_blank">`Purchasing > Requisitions > Create Requisition`</a>. Fill in the required header fields.
-- Click on 'Add from Punchout Catalog'. A pop-up will appear where you select the punchout group and user. Only punchout groups matching the shipping address you selected will be listed. After selecting a group and a user, click 'Proceed'.
-- You’ll be navigated to the vendor’s website. Browse, add items to your cart, and when ready, proceed to checkout and click 'Submit for Approval'.
-- This will bring you back to your requisition with the cart items automatically added.
-- Assign a category to each line item to link them to a GL account, and save the requisition.
-- Punchout items will be indicated with the vendor's logo in the View page.
+1. Go to <a href="https://buyer.proculy.com/app/requisitions/create-new" target="_blank">`Purchasing > Requisitions > Create Requisition`</a>. Fill in the required header fields.
+2. Click on 'Add from Punchout Catalog'. A pop-up will appear where you select the punchout group and user. Only punchout groups matching the shipping address you selected will be listed. After selecting a group and a user, click 'Proceed'.
+3. You’ll be navigated to the vendor’s website. Browse, add items to your cart, and when ready, proceed to checkout and click 'Submit for Approval'.
+4. This will bring you back to your requisition with the cart items automatically added.
+5. Assign a category to each line item to link them to a GL account, and save the requisition.
+6. Punchout items will be indicated with the vendor's logo in the View page.
 
 **Create a Purchase Order from the requisition:**
 
 - View your requisition and select the punchout line items. Click 'Create PO'.
-- Note: You must select all items from the same cart to create an order.
+<Warning>
+    Note: You must select all items from the same cart to create an order.
+</Warning>
 - The created PO will be saved as a draft. You can view it, link a budget to the order, and click 'Submit' to send it for approval.
 
 Once the PO is approved, the system will automatically confirm the order with the punchout vendor and process the full payment. The vendor will deliver the ordered items according to their service terms.
@@ -105,7 +120,9 @@ If an approver sends the PO back for revision, the creator can update the expect
 
 Proculy offers a connector framework to integrate third-party applications relevant to your procurement process. Currently, you can connect your inventory in QuickBook to Proculy.
 
+<Tip>
 To configure your QuickBooks connection and sync your item catalog, follow the below steps:
+</Tip>
 
 - Navigate to Connectors in the main menu and click the Add Config button for QuickBook. In the popup that appears enter your QuickBooks API credentials and relevant details. Click Save to add the configuration.
 
@@ -124,7 +141,9 @@ To configure your QuickBooks connection and sync your item catalog, follow the b
     <img src="/images/146.png" style={{borderRadius: '0.5rem'}}/>
 </Frame>
 
-- Once connected, your QuickBooks account will be linked with Proculy.
+<Info>
+Once connected, your QuickBooks account will be linked with Proculy.
+</Info>
 - Next, go to <a href="https://buyer.proculy.com/app/inventory/item-master" target="_blank">`Purchasing > Item Catalog > Goods`</a>. There, a ‘Sync with QB’ button will be available for each item, click it for the items you want to sync. These items will now appear in your QuickBooks inventory.
 
 <Frame>
